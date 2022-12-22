@@ -19,13 +19,7 @@ pipelines:
       - step:
           name: Add Build Folder
           script:
-            - ssh $USER@$SERVER "sudo mkdir /var/www/html/stylupAdminAngularjs/dist"
-      
-      - step:
-          name: Add Folder Permission
-          script:
-            - ssh $USER@$SERVER "sudo chmod 777 /var/www/html/stylupAdminAngularjs/dist"
-            
+            - ssh $USER@$SERVER "sudo mkdir /var/www/html/stylupAdminAngularjs/dist"            
       - step:
           name: Deploy artifacts using SCP to PROD
           deployment: production
