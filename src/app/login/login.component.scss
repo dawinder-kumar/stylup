@@ -1,0 +1,46 @@
+.login-image {
+    height: 100vh;
+    background: url(../../assets/images/login-image.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.login-form {
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-login-form {
+        width: 60%;
+    }
+    @media(max-width:767px){
+        .inner-login-form {
+            width: 90%;
+        }
+    }
+}
+
+
+.text-field {
+    border-radius: 8px;
+    padding: 14px 20px;
+}
+
+.btn {
+    padding: 14px 20px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+    font-weight: 600;
+}
+
+.valid-drop {
+    background: white;
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -45px;
+}
